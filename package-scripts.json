@@ -1,0 +1,13 @@
+{
+  "scripts": {
+    "start": "Start development server",
+    "android": "Run on Android device/emulator",
+    "ios": "Run on iOS simulator",
+    "web": "Run in web browser",
+    "lint": "Run ESLint",
+    "test": "Run tests",
+    "build:android": "Build Android APK/AAB",
+    "build:ios": "Build iOS app"
+  }
+}
+

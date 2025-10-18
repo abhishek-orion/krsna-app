@@ -1,0 +1,193 @@
+{
+  "metadata": {
+    "title": "Bhagavad Gita (English)",
+    "translator": "Sir Edwin Arnold",
+    "translation": "The Song Celestial",
+    "source_url": "https://www.gutenberg.org/ebooks/2388",
+    "license": "Public Domain",
+    "year": 1885,
+    "language": "en",
+    "total_chapters": 18,
+    "total_verses": 700
+  },
+  "chapters": [
+    {
+      "chapter": 1,
+      "name_en": "The Distress of Arjuna",
+      "name_sanskrit": "अर्जुनविषादयोग",
+      "name_transliteration": "Arjuna Viṣāda Yoga",
+      "name_meaning": "The Yoga of the Despondency of Arjuna",
+      "summary": "On the battlefield of Kurukshetra, Prince Arjuna experiences moral confusion and grief seeing his relatives and teachers arrayed for battle. He turns to Lord Krishna for guidance.",
+      "verses_count": 47
+    },
+    {
+      "chapter": 2,
+      "name_en": "The Yoga of Knowledge",
+      "name_sanskrit": "सांख्ययोग",
+      "name_transliteration": "Sāṅkhya Yoga",
+      "name_meaning": "The Yoga of Knowledge and Reason",
+      "summary": "Krishna begins His divine discourse, explaining the eternal nature of the soul, the path of selfless action, and the importance of equanimity.",
+      "verses_count": 72
+    },
+    {
+      "chapter": 3,
+      "name_en": "The Yoga of Action",
+      "name_sanskrit": "कर्मयोग",
+      "name_transliteration": "Karma Yoga",
+      "name_meaning": "The Yoga of Selfless Action",
+      "summary": "Krishna explains the importance of performing one's duty without attachment to results, emphasizing karma yoga as a path to liberation.",
+      "verses_count": 43
+    },
+    {
+      "chapter": 4,
+      "name_en": "The Yoga of Wisdom",
+      "name_sanskrit": "ज्ञानकर्मसन्न्यासयोग",
+      "name_transliteration": "Jñāna Karma Sannyāsa Yoga",
+      "name_meaning": "The Yoga of Knowledge and Renunciation of Action",
+      "summary": "Krishna reveals the history of yoga and His divine incarnations, explaining the distinction between action and inaction.",
+      "verses_count": 42
+    },
+    {
+      "chapter": 5,
+      "name_en": "The Yoga of Renunciation",
+      "name_sanskrit": "कर्मसन्न्यासयोग",
+      "name_transliteration": "Karma Sannyāsa Yoga",
+      "name_meaning": "The Yoga of Renunciation of Action",
+      "summary": "Krishna compares the paths of renunciation and action, explaining how both lead to liberation when done with the right understanding.",
+      "verses_count": 29
+    },
+    {
+      "chapter": 6,
+      "name_en": "The Yoga of Meditation",
+      "name_sanskrit": "आत्मसंयमयोग",
+      "name_transliteration": "Ātma Saṃyama Yoga",
+      "name_meaning": "The Yoga of Self-Control and Meditation",
+      "summary": "Krishna describes the practice of meditation, the qualities of a yogi, and the ultimate goal of self-realization.",
+      "verses_count": 47
+    },
+    {
+      "chapter": 7,
+      "name_en": "The Yoga of Wisdom and Knowledge",
+      "name_sanskrit": "ज्ञानविज्ञानयोग",
+      "name_transliteration": "Jñāna Vijñāna Yoga",
+      "name_meaning": "The Yoga of Knowledge and Wisdom",
+      "summary": "Krishna explains His divine nature, the difference between matter and spirit, and how devotees can know Him.",
+      "verses_count": 30
+    },
+    {
+      "chapter": 8,
+      "name_en": "The Yoga of the Imperishable Absolute",
+      "name_sanskrit": "अक्षरब्रह्मयोग",
+      "name_transliteration": "Akṣara Brahma Yoga",
+      "name_meaning": "The Yoga of the Eternal Divine",
+      "summary": "Krishna describes the nature of the Supreme, the path to attaining Him, and the importance of remembering Him at the time of death.",
+      "verses_count": 28
+    },
+    {
+      "chapter": 9,
+      "name_en": "The Yoga of Sovereign Knowledge and Sovereign Secret",
+      "name_sanskrit": "राजविद्याराजगुह्ययोग",
+      "name_transliteration": "Rāja Vidyā Rāja Guhya Yoga",
+      "name_meaning": "The Yoga of Royal Knowledge and Royal Secret",
+      "summary": "Krishna reveals the supreme secret of devotion and explains how all beings exist in Him and He pervades all creation.",
+      "verses_count": 34
+    },
+    {
+      "chapter": 10,
+      "name_en": "The Yoga of Divine Manifestations",
+      "name_sanskrit": "विभूतियोग",
+      "name_transliteration": "Vibhūti Yoga",
+      "name_meaning": "The Yoga of Divine Glories",
+      "summary": "Krishna describes His divine manifestations and opulences in the material world, revealing His infinite nature.",
+      "verses_count": 42
+    },
+    {
+      "chapter": 11,
+      "name_en": "The Yoga of the Vision of the Universal Form",
+      "name_sanskrit": "विश्वरूपदर्शनयोग",
+      "name_transliteration": "Viśvarūpa Darśana Yoga",
+      "name_meaning": "The Yoga of Beholding the Cosmic Form",
+      "summary": "Arjuna requests to see Krishna's universal form. Krishna grants him divine vision and reveals His awe-inspiring cosmic form.",
+      "verses_count": 55
+    },
+    {
+      "chapter": 12,
+      "name_en": "The Yoga of Devotion",
+      "name_sanskrit": "भक्तियोग",
+      "name_transliteration": "Bhakti Yoga",
+      "name_meaning": "The Yoga of Devotion",
+      "summary": "Krishna explains the path of devotion and describes the qualities of His true devotees.",
+      "verses_count": 20
+    },
+    {
+      "chapter": 13,
+      "name_en": "The Yoga of Distinction Between Field and Knower of Field",
+      "name_sanskrit": "क्षेत्रक्षेत्रज्ञविभागयोग",
+      "name_transliteration": "Kṣetra Kṣetrajña Vibhāga Yoga",
+      "name_meaning": "The Yoga of Distinguishing the Field and the Knower",
+      "summary": "Krishna explains the distinction between the body (field) and the soul (knower of the field), and the nature of knowledge.",
+      "verses_count": 35
+    },
+    {
+      "chapter": 14,
+      "name_en": "The Yoga of the Three Qualities of Nature",
+      "name_sanskrit": "गुणत्रयविभागयोग",
+      "name_transliteration": "Guṇa Traya Vibhāga Yoga",
+      "name_meaning": "The Yoga of Differentiation of Three Qualities",
+      "summary": "Krishna describes the three modes of material nature (goodness, passion, ignorance) and how to transcend them.",
+      "verses_count": 27
+    },
+    {
+      "chapter": 15,
+      "name_en": "The Yoga of the Supreme Person",
+      "name_sanskrit": "पुरुषोत्तमयोग",
+      "name_transliteration": "Puruṣottama Yoga",
+      "name_meaning": "The Yoga of the Supreme Divine Person",
+      "summary": "Krishna describes the eternal tree of existence and reveals Himself as the Supreme Person beyond both the fallible and infallible.",
+      "verses_count": 20
+    },
+    {
+      "chapter": 16,
+      "name_en": "The Yoga of Division Between Divine and Demoniacal",
+      "name_sanskrit": "दैवासुरसम्पद्विभागयोग",
+      "name_transliteration": "Daivāsura Sampadvibhāga Yoga",
+      "name_meaning": "The Yoga of Distinguishing Divine and Demonic Natures",
+      "summary": "Krishna describes the characteristics of divine and demoniac natures, and the importance of following the scriptures.",
+      "verses_count": 24
+    },
+    {
+      "chapter": 17,
+      "name_en": "The Yoga of the Three Divisions of Faith",
+      "name_sanskrit": "श्रद्धात्रयविभागयोग",
+      "name_transliteration": "Śraddhā Traya Vibhāga Yoga",
+      "name_meaning": "The Yoga of Three Types of Faith",
+      "summary": "Krishna explains the three types of faith and how they influence one's practices, food preferences, and sacrifices.",
+      "verses_count": 28
+    },
+    {
+      "chapter": 18,
+      "name_en": "The Yoga of Liberation Through Renunciation",
+      "name_sanskrit": "मोक्षसन्न्यासयोग",
+      "name_transliteration": "Mokṣa Sannyāsa Yoga",
+      "name_meaning": "The Yoga of Liberation Through Renunciation",
+      "summary": "Krishna concludes His teachings, explaining true renunciation, the three types of knowledge and action, and offers the ultimate instruction.",
+      "verses_count": 78
+    }
+  ],
+  "verses": [
+    {
+      "chapter": 1,
+      "verse": 1,
+      "sloka_sanskrit": "धृतराष्ट्र उवाच । धर्मक्षेत्रे कुरुक्षेत्रे समवेता युयुत्सवः । मामकाः पाण्डवाश्चैव किमकुर्वत सञ्जय ॥१॥",
+      "transliteration": "dhṛtarāṣṭra uvāca dharma-kṣetre kuru-kṣetre samavetā yuyutsavaḥ māmakāḥ pāṇḍavāś caiva kim akurvata sañjaya",
+      "translation_en": "Dhritarashtra said: O Sanjaya, after my sons and the sons of Pandu assembled in the place of pilgrimage at Kurukshetra, desiring to fight, what did they do?"
+    },
+    {
+      "chapter": 2,
+      "verse": 47,
+      "sloka_sanskrit": "कर्मण्येवाधिकारस्ते मा फलेषु कदाचन । मा कर्मफलहेतुर्भूर्मा ते सङ्गोऽस्त्वकर्मणि ॥४७॥",
+      "transliteration": "karmaṇy-evādhikāras te mā phaleṣu kadācana mā karma-phala-hetur bhūr mā te saṅgo 'stv akarmaṇi",
+      "translation_en": "You have a right to perform your prescribed duty, but you are not entitled to the fruits of action. Never consider yourself the cause of the results of your activities, and never be attached to not doing your duty."
+    }
+  ]
+}
