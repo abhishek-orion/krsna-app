@@ -165,7 +165,7 @@ const styles = StyleSheet.create({
   },
   scrollContent: {
     paddingHorizontal: Theme.spacing.md,
-    paddingBottom: Theme.spacing.xxl,
+    paddingBottom: 85, // Extra padding for sticky tab bar
   },
   sectionTitle: {
     fontSize: Theme.typography.sizes.xl,

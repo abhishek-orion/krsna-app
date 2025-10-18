@@ -212,6 +212,7 @@ const styles = StyleSheet.create({
   messagesContent: {
     paddingHorizontal: Theme.spacing.md,
     paddingVertical: Theme.spacing.lg,
+    paddingBottom: 85, // Extra padding for sticky tab bar
   },
   messageBubble: {
     maxWidth: '80%',

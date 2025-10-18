@@ -7,6 +7,7 @@ export interface GitaVerse {
   sloka_sanskrit?: string;
   translation_en: string;
   transliteration?: string;
+  commentary_en?: string; // Detailed explanation and meaning
   translator?: string;
   source_url?: string;
 }

@@ -67,15 +67,9 @@ export default function VerseDetailScreen() {
     <>
       <Stack.Screen
         options={{
-          title: `${chapterNum}:${verseNum}`,
-          headerBackTitle: 'Verses',
-          headerStyle: {
-            backgroundColor: Theme.colors.purple[800],
-          },
-          headerTintColor: Theme.colors.white,
-          headerTitleStyle: {
-            fontWeight: Theme.typography.weights.bold,
-          },
+          title: `Verse ${chapterNum}:${verseNum}`,
+          headerShown: true,
+          headerBackTitle: 'Back',
         }}
       />
       <GradientBackground>
@@ -113,6 +107,17 @@ export default function VerseDetailScreen() {
               <Text style={styles.sectionLabel}>Translation</Text>
               <Text style={styles.translation}>{verseData.translation_en}</Text>
             </View>
+
+            {/* Commentary - New Section */}
+            {verseData.commentary_en && (
+              <View style={[styles.card, styles.commentaryCard]}>
+                <View style={styles.commentaryHeader}>
+                  <FontAwesome name="book" size={18} color={Theme.colors.gold[400]} />
+                  <Text style={styles.sectionLabel}>  Commentary & Meaning</Text>
+                </View>
+                <Text style={styles.commentary}>{verseData.commentary_en}</Text>
+              </View>
+            )}
 
             {/* TTS Player */}
             <View style={styles.playerCard}>
@@ -252,6 +257,22 @@ const styles = StyleSheet.create({
     backgroundColor: 'rgba(126, 87, 255, 0.15)',
     borderLeftWidth: 4,
     borderLeftColor: Theme.colors.purple[400],
+  },
+  commentaryCard: {
+    backgroundColor: 'rgba(126, 87, 255, 0.1)',
+    borderLeftWidth: 4,
+    borderLeftColor: Theme.colors.accent,
+  },
+  commentaryHeader: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    marginBottom: Theme.spacing.sm,
+  },
+  commentary: {
+    fontSize: Theme.typography.sizes.md,
+    lineHeight: 24,
+    color: Theme.colors.white,
+    fontFamily: 'System',
   },
   sectionLabel: {
     fontSize: Theme.typography.sizes.sm,

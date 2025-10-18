@@ -55,14 +55,8 @@ export default function ChapterDetailScreen() {
       <Stack.Screen
         options={{
           title: `Chapter ${chapterNumber}`,
-          headerBackTitle: 'Chapters',
-          headerStyle: {
-            backgroundColor: Theme.colors.purple[800],
-          },
-          headerTintColor: Theme.colors.white,
-          headerTitleStyle: {
-            fontWeight: Theme.typography.weights.bold,
-          },
+          headerShown: true,
+          headerBackTitle: 'Back',
         }}
       />
       <GradientBackground>
