@@ -25,6 +25,7 @@ export default function SettingsScreen() {
       <SafeAreaView style={styles.safeArea}>
         <View style={styles.header}>
           <Text style={styles.screenTitle}>Settings</Text>
+          <Text style={styles.headerSubtitle}>Customize your spiritual journey</Text>
         </View>
 
         <ScrollView
@@ -127,12 +128,19 @@ export default function SettingsScreen() {
               />
             </View>
 
-            <TouchableOpacity style={styles.settingItem}>
-              <FontAwesome name="moon-o" size={20} color={Theme.colors.saffron[400]} />
-              <Text style={styles.settingText}>Theme</Text>
-              <Text style={styles.settingValue}>{settings.theme === 'dark' ? 'Dark' : 'Light'}</Text>
-              <FontAwesome name="chevron-right" size={16} color={Theme.colors.purple[300]} />
-            </TouchableOpacity>
+            <View style={styles.settingItem}>
+              <FontAwesome name="sun-o" size={20} color={Theme.colors.saffron[400]} />
+              <Text style={styles.settingText}>Dark Mode</Text>
+              <Switch
+                value={settings.theme === 'dark'}
+                onValueChange={(value) => updateAppSettings({ theme: value ? 'dark' : 'light' })}
+                trackColor={{ 
+                  false: Theme.colors.saffron[500], 
+                  true: Theme.colors.purple[600] 
+                }}
+                thumbColor={settings.theme === 'dark' ? Theme.colors.purple[400] : Theme.colors.gold[400]}
+              />
+            </View>
           </View>
 
           {/* About Section */}
@@ -208,7 +216,12 @@ const styles = StyleSheet.create({
   screenTitle: {
     fontSize: Theme.typography.sizes.xxxl,
     fontWeight: Theme.typography.weights.bold,
-    color: Theme.colors.gold[400],
+    color: Theme.colors.white,
+  },
+  headerSubtitle: {
+    fontSize: Theme.typography.sizes.md,
+    color: Theme.colors.purple[200],
+    marginTop: Theme.spacing.xs / 2,
   },
   scrollView: {
     flex: 1,
@@ -228,15 +241,17 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: Theme.colors.purple[800],
-    borderRadius: Theme.borderRadius.lg,
-    padding: Theme.spacing.md,
+    borderRadius: Theme.borderRadius.xl,
+    padding: Theme.spacing.lg,
     marginBottom: Theme.spacing.sm,
     borderWidth: 1,
     borderColor: Theme.colors.purple[700],
+    ...Theme.shadows.md,
   },
   accountInfo: {
     flexDirection: 'row',
     alignItems: 'center',
+    paddingVertical: Theme.spacing.sm,
   },
   accountDetails: {
     marginLeft: Theme.spacing.md,
@@ -256,11 +271,12 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
     backgroundColor: Theme.colors.purple[800],
-    borderRadius: Theme.borderRadius.lg,
+    borderRadius: Theme.borderRadius.xl,
     padding: Theme.spacing.md,
     marginBottom: Theme.spacing.sm,
     borderWidth: 1,
     borderColor: Theme.colors.purple[700],
+    ...Theme.shadows.sm,
   },
   settingText: {
     flex: 1,

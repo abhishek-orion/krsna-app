@@ -1,18 +1,150 @@
-export const Theme = {
+// Light theme colors (Saffron & Peacock Feather theme)
+export const lightTheme = {
+  colors: {
+    // Primary Brand Colors (Saffron & Peacock inspired)
+    primary: '#FF9933', // Sacred Saffron
+    secondary: '#FF7518', // Deep Saffron
+    accent: '#0047AB', // Royal Blue (Peacock)
+    background: '#FFF8E7', // Cream/Light Saffron Background
+    card: '#FFFFFF', // Pure White Card
+    text: '#1A1410', // Very Dark Brown Text (better contrast)
+    textSecondary: '#5C4A3A', // Medium Brown (better contrast)
+    border: '#E8D5B5', // Soft Gold border
+    notification: '#FF6B81', // Soft Red
+    success: '#00A86B', // Emerald Green (Peacock)
+    error: '#D32F2F', // Error Red
+    warning: '#FF9933', // Saffron Warning
+    
+    // Enhanced Saffron Palette
+    saffron: {
+      50: '#FFF9F0',
+      100: '#FFF3E0',
+      200: '#FFE0B2',
+      300: '#FFCC80',
+      400: '#FFB74D',
+      500: '#FF9933', // Primary Sacred Saffron
+      600: '#FF7518', // Deep Saffron
+      700: '#F57C00',
+      800: '#E65100',
+      900: '#BF360C',
+    },
+    // Peacock Feather Palette
+    peacock: {
+      blue: {
+        50: '#E3F2FD',
+        100: '#BBDEFB',
+        200: '#90CAF9',
+        300: '#64B5F6',
+        400: '#42A5F5',
+        500: '#0047AB', // Royal Blue
+        600: '#1976D2',
+        700: '#1565C0',
+        800: '#0D47A1',
+        900: '#003D82',
+      },
+      green: {
+        50: '#E8F5E9',
+        100: '#C8E6C9',
+        200: '#A5D6A7',
+        300: '#81C784',
+        400: '#66BB6A',
+        500: '#00A86B', // Emerald Green
+        600: '#43A047',
+        700: '#388E3C',
+        800: '#2E7D32',
+        900: '#1B5E20',
+      },
+      turquoise: {
+        50: '#E0F7FA',
+        100: '#B2EBF2',
+        200: '#80DEEA',
+        300: '#4DD0E1',
+        400: '#26C6DA',
+        500: '#40E0D0', // Turquoise
+        600: '#00ACC1',
+        700: '#0097A7',
+        800: '#00838F',
+        900: '#006064',
+      },
+    },
+    // Gold Palette
+    gold: {
+      50: '#FFF9E6',
+      100: '#FFF3CC',
+      200: '#FFE699',
+      300: '#FFD966',
+      400: '#FFD700', // Bright Gold
+      500: '#FFA500', // Deep Gold
+      600: '#FF8C00',
+      700: '#FF7F00',
+      800: '#CC6600',
+      900: '#995200',
+    },
+    // Purple Palette (lighter versions for light theme)
+    purple: {
+      50: '#F5F3FF',
+      100: '#EDE9FE',
+      200: '#DDD6FE',
+      300: '#C4B5FD',
+      400: '#A78BFA',
+      500: '#8B5CF6', // Base purple for light theme
+      600: '#7C3AED',
+      700: '#6D28D9',
+      800: '#5B21B6',
+      900: '#4C1D95',
+    },
+    // Grayscale
+    gray: {
+      50: '#F9FAFB',
+      100: '#F3F4F6',
+      200: '#E5E7EB',
+      300: '#D1D5DB',
+      400: '#9CA3AF',
+      500: '#6B7280',
+      600: '#4B5563',
+      700: '#374151',
+      800: '#1F2937',
+      900: '#111827',
+    },
+    white: '#FFFFFF',
+    black: '#000000',
+    
+    // Additional UI Colors
+    overlay: 'rgba(255, 153, 51, 0.1)',
+    glassOverlay: 'rgba(0, 71, 171, 0.1)',
+    darkGlassOverlay: 'rgba(0, 0, 0, 0.1)',
+  },
+  gradients: {
+    // Saffron Gradients
+    primary: ['#FFF8E7', '#FFE0B2', '#FFCC80'], // Cream to saffron
+    spiritual: ['#FF9933', '#FFB74D', '#FFCC80'], // Saffron fade
+    sunrise: ['#FF9933', '#FFD700', '#FFF8E7'], // Saffron sunrise
+    night: ['#FFF8E7', '#FFE0B2', '#FFCC80'], // Same as primary (light doesn't have night)
+    peacock: ['#0047AB', '#40E0D0', '#00A86B'], // Peacock feathers
+    sacredGold: ['#FFD700', '#FFA500', '#FF9933'], // Gold to saffron
+    card: ['rgba(255, 255, 255, 0.9)', 'rgba(255, 248, 231, 0.95)'], // Light glass
+    cardSolid: ['#FFFFFF', '#FFF8E7'], // White to cream
+    overlay: ['rgba(255, 248, 231, 0)', 'rgba(255, 248, 231, 0.95)'], // Light fade
+    featured: ['#FF9933', '#FFB74D'], // Saffron featured
+  },
+};
+
+// Dark theme colors (Original Purple theme)
+export const darkTheme = {
   colors: {
     // Primary Brand Colors (inspired by meditation apps)
-    primary: '#5B4FC9', // Soft Royal Purple
-    secondary: '#3D2C8D', // Deep Indigo
-    accent: '#FFB800', // Warm Gold
-    background: '#2D1B4E', // Rich Dark Purple
-    card: '#3D2D6B', // Card Purple
+    primary: '#6C5CE7', // Vibrant Purple
+    secondary: '#5F3DC4', // Rich Purple
+    accent: '#FFC517', // Bright Gold
+    background: '#1A0B2E', // Very Deep Purple Background (darker for better contrast)
+    card: '#2C1654', // Card Purple (darker than before)
     text: '#FFFFFF', // White
-    textSecondary: '#C7B8EA', // Soft Purple Gray
-    border: '#4A3A8C', // Subtle Purple border
-    notification: '#FF6B6B', // Soft Red
+    textSecondary: '#C7B8EA', // Light Purple Gray (lighter for better contrast)
+    border: '#4D3A8C', // Subtle Purple border
+    notification: '#FF6B81', // Soft Red
     success: '#4ECB71', // Fresh Green
     error: '#FF5757', // Soft Error Red
-    warning: '#FFB800', // Gold Warning
+    warning: '#FFC517', // Gold Warning
     
     // Enhanced Saffron Palette (warmer, more inviting)
     saffron: {
@@ -89,20 +221,27 @@ export const Theme = {
   },
   gradients: {
     // Primary App Gradient
-    primary: ['#2D1B6E', '#3D2C8D', '#5B4FC9'], // Deep to vibrant purple
+    primary: ['#0D0520', '#1A0B2E', '#2C1654'], // Very deep to deep purple
     // Warm Spiritual Gradient
-    spiritual: ['#5B4FC9', '#8B6DD9', '#A990E4'], // Purple fade
+    spiritual: ['#6C5CE7', '#8B73D9', '#A990E4'], // Purple fade
     // Sunrise Gradient
-    sunrise: ['#FF6B6B', '#FFB800', '#FFCE3C'], // Warm glow
+    sunrise: ['#FF6B81', '#FFC517', '#FFD966'], // Warm glow
     // Peaceful Night
-    night: ['#1D204C', '#2D1B6E', '#3D2C8D'], // Deep peaceful
+    night: ['#0D0520', '#1A0B2E', '#2C1654'], // Very deep peaceful
     // Sacred Gold
-    sacredGold: ['#FFB800', '#FFCE3C', '#FFE28A'], // Gold shimmer
+    sacredGold: ['#FFC517', '#FFD966', '#FFE699'], // Gold shimmer
     // Card Gradient
-    card: ['rgba(61, 45, 107, 0.6)', 'rgba(91, 79, 201, 0.3)'], // Glass effect
+    card: ['rgba(44, 22, 84, 0.8)', 'rgba(74, 46, 127, 0.6)'], // Darker glass effect
+    cardSolid: ['#2C1654', '#3E2C6B'], // Darker solid card gradient
     // Overlay Gradient
-    overlay: ['rgba(45, 27, 78, 0)', 'rgba(45, 27, 78, 0.9)'], // Fade to dark
+    overlay: ['rgba(13, 5, 32, 0)', 'rgba(13, 5, 32, 0.95)'], // Fade to very dark
+    // Featured Gradient
+    featured: ['#6C5CE7', '#A990E4'], // Soft purple
   },
+};
+
+// Common design tokens (shared between themes)
+const commonTokens = {
   typography: {
     sizes: {
       xs: 10,
@@ -142,43 +281,14 @@ export const Theme = {
     xxl: 48,
   },
   borderRadius: {
-    sm: 4,
-    md: 8,
-    lg: 12,
-    xl: 24,
+    xs: 6,
+    sm: 8,
+    md: 12,
+    lg: 16,
+    xl: 20,
+    xxl: 28,
     full: 999,
   },
-  shadows: {
-    sm: {
-      shadowColor: '#2D1B6E',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.15,
-      shadowRadius: 3,
-      elevation: 2,
-    },
-    md: {
-      shadowColor: '#2D1B6E',
-      shadowOffset: { width: 0, height: 4 },
-      shadowOpacity: 0.25,
-      shadowRadius: 8,
-      elevation: 5,
-    },
-    lg: {
-      shadowColor: '#2D1B6E',
-      shadowOffset: { width: 0, height: 8 },
-      shadowOpacity: 0.35,
-      shadowRadius: 16,
-      elevation: 10,
-    },
-    glow: {
-      shadowColor: '#FFB800',
-      shadowOffset: { width: 0, height: 0 },
-      shadowOpacity: 0.5,
-      shadowRadius: 12,
-      elevation: 8,
-    },
-  },
-  // Animations
   animations: {
     fast: 200,
     normal: 300,
@@ -189,4 +299,83 @@ export const Theme = {
     paddingHorizontal: 20,
   },
 };
+
+// Light theme shadows
+const lightShadows = {
+  sm: {
+    shadowColor: '#FF9933',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 3,
+    elevation: 2,
+  },
+  md: {
+    shadowColor: '#FF7518',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.2,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  lg: {
+    shadowColor: '#0047AB',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.25,
+    shadowRadius: 16,
+    elevation: 10,
+  },
+  glow: {
+    shadowColor: '#FFD700',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.4,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+};
+
+// Dark theme shadows
+const darkShadows = {
+  sm: {
+    shadowColor: '#2D1B6E',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.15,
+    shadowRadius: 3,
+    elevation: 2,
+  },
+  md: {
+    shadowColor: '#2D1B6E',
+    shadowOffset: { width: 0, height: 4 },
+    shadowOpacity: 0.25,
+    shadowRadius: 8,
+    elevation: 5,
+  },
+  lg: {
+    shadowColor: '#2D1B6E',
+    shadowOffset: { width: 0, height: 8 },
+    shadowOpacity: 0.35,
+    shadowRadius: 16,
+    elevation: 10,
+  },
+  glow: {
+    shadowColor: '#FFB800',
+    shadowOffset: { width: 0, height: 0 },
+    shadowOpacity: 0.5,
+    shadowRadius: 12,
+    elevation: 8,
+  },
+};
+
+// Function to get theme based on mode
+export const getTheme = (mode: 'light' | 'dark' = 'dark') => {
+  const themeColors = mode === 'light' ? lightTheme : darkTheme;
+  const themeShadows = mode === 'light' ? lightShadows : darkShadows;
+  
+  return {
+    ...themeColors,
+    ...commonTokens,
+    shadows: themeShadows,
+  };
+};
+
+// Default export (dark theme by default)
+export const Theme = getTheme('dark');
 

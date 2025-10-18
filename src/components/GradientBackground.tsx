@@ -1,13 +1,13 @@
 import React from 'react';
 import { StyleSheet, ViewStyle } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
-import { Theme } from '../../constants/Theme';
+import { useTheme } from '../contexts/ThemeContext';
 
 interface GradientBackgroundProps {
   children: React.ReactNode;
   colors?: string[];
   style?: ViewStyle;
-  variant?: 'primary' | 'spiritual' | 'night' | 'peaceful';
+  variant?: 'primary' | 'spiritual' | 'night' | 'peaceful' | 'peacock';
 }
 
 export function GradientBackground({
@@ -16,19 +16,25 @@ export function GradientBackground({
   style,
   variant = 'primary',
 }: GradientBackgroundProps) {
+  const theme = useTheme();
+  
   // Get gradient colors based on variant if colors not explicitly provided
   const getGradientColors = () => {
     if (colors) return colors;
     
+    const gradients = theme.gradients as any;
+    
     switch (variant) {
       case 'spiritual':
-        return Theme.gradients.spiritual;
+        return gradients.spiritual || theme.gradients.primary;
       case 'night':
-        return Theme.gradients.night;
+        return gradients.night || theme.gradients.primary;
       case 'peaceful':
-        return [Theme.colors.purple[900], Theme.colors.indigo[800], Theme.colors.purple[700]];
+        return [theme.colors.primary, theme.colors.secondary, theme.colors.card];
+      case 'peacock':
+        return gradients.peacock || theme.gradients.primary;
       default:
-        return Theme.gradients.primary;
+        return theme.gradients.primary;
     }
   };
   

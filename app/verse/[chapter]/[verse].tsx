@@ -243,14 +243,10 @@ const styles = StyleSheet.create({
   },
   card: {
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    borderRadius: Theme.borderRadius.lg,
+    borderRadius: Theme.borderRadius.xl,
     padding: Theme.spacing.lg,
     marginBottom: Theme.spacing.md,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
-    elevation: 5,
+    ...Theme.shadows.md,
   },
   translationCard: {
     backgroundColor: 'rgba(126, 87, 255, 0.15)',
@@ -289,14 +285,11 @@ const styles = StyleSheet.create({
   },
   playerCard: {
     backgroundColor: 'rgba(255, 255, 255, 0.1)',
-    borderRadius: Theme.borderRadius.lg,
+    borderRadius: Theme.borderRadius.xl,
     padding: Theme.spacing.lg,
     marginTop: Theme.spacing.lg,
     alignItems: 'center',
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
+    ...Theme.shadows.md,
     elevation: 5,
   },
   playButton: {

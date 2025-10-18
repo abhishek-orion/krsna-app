@@ -1,7 +1,10 @@
 import React from 'react';
 import { View, Text, StyleSheet, Pressable } from 'react-native';
+import { LinearGradient } from 'expo-linear-gradient';
+import { FontAwesome } from '@expo/vector-icons';
 import { GitaChapter } from '../types';
 import { useRouter } from 'expo-router';
+import { Theme } from '../../constants/Theme';
 
 interface ChapterCardProps {
   chapter: GitaChapter;
@@ -11,83 +14,100 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({ chapter }) => {
   const router = useRouter();
 
   const handlePress = () => {
-    router.push(`/chapter/${chapter.number}`);
+    router.push(`/chapter/${chapter.chapter}`);
   };
 
   return (
     <Pressable style={styles.card} onPress={handlePress}>
-      <View style={styles.numberContainer}>
-        <Text style={styles.number}>{chapter.number}</Text>
-      </View>
-      <View style={styles.content}>
-        <Text style={styles.title}>{chapter.title_en}</Text>
-        {chapter.title_sanskrit && (
-          <Text style={styles.sanskrit}>{chapter.title_sanskrit}</Text>
-        )}
-        {chapter.summary && (
-          <Text style={styles.summary} numberOfLines={2}>
-            {chapter.summary}
-          </Text>
-        )}
-        <Text style={styles.verseCount}>{chapter.verse_count} verses</Text>
-      </View>
+      <LinearGradient
+        colors={Theme.gradients.cardSolid as [string, string, ...string[]]}
+        style={styles.gradient}
+        start={{ x: 0, y: 0 }}
+        end={{ x: 1, y: 1 }}
+      >
+        <View style={styles.numberContainer}>
+          <Text style={styles.number}>{chapter.chapter}</Text>
+        </View>
+        <View style={styles.content}>
+          <Text style={styles.title}>{chapter.name_en}</Text>
+          {chapter.name_sanskrit && (
+            <Text style={styles.sanskrit}>{chapter.name_sanskrit}</Text>
+          )}
+          {chapter.summary && (
+            <Text style={styles.summary} numberOfLines={2}>
+              {chapter.summary}
+            </Text>
+          )}
+          <View style={styles.footer}>
+            <Text style={styles.verseCount}>{chapter.verses_count} verses</Text>
+            <FontAwesome name="chevron-right" size={16} color={Theme.colors.gold[400]} />
+          </View>
+        </View>
+      </LinearGradient>
     </Pressable>
   );
 };
 
 const styles = StyleSheet.create({
   card: {
+    marginHorizontal: Theme.spacing.md,
+    marginVertical: Theme.spacing.xs,
+    borderRadius: Theme.borderRadius.xl,
+    overflow: 'hidden',
+    ...Theme.shadows.md,
+  },
+  gradient: {
     flexDirection: 'row',
-    backgroundColor: '#fff',
-    borderRadius: 12,
-    padding: 16,
-    marginHorizontal: 16,
-    marginVertical: 8,
-    shadowColor: '#000',
-    shadowOffset: { width: 0, height: 2 },
-    shadowOpacity: 0.1,
-    shadowRadius: 4,
-    elevation: 3,
+    padding: Theme.spacing.md,
   },
   numberContainer: {
-    width: 60,
-    height: 60,
-    borderRadius: 30,
-    backgroundColor: '#FF6B35',
+    width: 64,
+    height: 64,
+    borderRadius: Theme.borderRadius.lg,
+    backgroundColor: Theme.colors.gold[500],
     justifyContent: 'center',
     alignItems: 'center',
-    marginRight: 16,
+    marginRight: Theme.spacing.md,
+    ...Theme.shadows.sm,
   },
   number: {
-    fontSize: 24,
-    fontWeight: '700',
-    color: '#fff',
+    fontSize: Theme.typography.sizes.xxl,
+    fontWeight: Theme.typography.weights.bold,
+    color: Theme.colors.white,
   },
   content: {
     flex: 1,
     justifyContent: 'center',
   },
   title: {
-    fontSize: 18,
-    fontWeight: '600',
-    color: '#222',
-    marginBottom: 4,
+    fontSize: Theme.typography.sizes.lg,
+    fontWeight: Theme.typography.weights.bold,
+    color: Theme.colors.white,
+    marginBottom: Theme.spacing.xs / 2,
   },
   sanskrit: {
-    fontSize: 14,
-    color: '#666',
-    marginBottom: 6,
+    fontSize: Theme.typography.sizes.sm,
+    color: Theme.colors.gold[300],
+    fontStyle: 'italic',
+    marginBottom: Theme.spacing.xs,
   },
   summary: {
-    fontSize: 13,
-    color: '#777',
-    lineHeight: 18,
-    marginBottom: 6,
+    fontSize: Theme.typography.sizes.sm,
+    color: Theme.colors.purple[200],
+    lineHeight: Theme.typography.lineHeights.sm,
+    marginBottom: Theme.spacing.sm,
+  },
+  footer: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
   },
   verseCount: {
-    fontSize: 12,
-    color: '#999',
-    fontWeight: '500',
+    fontSize: Theme.typography.sizes.xs,
+    color: Theme.colors.gold[400],
+    fontWeight: Theme.typography.weights.semibold,
+    textTransform: 'uppercase',
+    letterSpacing: 0.5,
   },
 });
 
