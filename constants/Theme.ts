@@ -1,77 +1,107 @@
 export const Theme = {
   colors: {
-    primary: '#FF6B35', // Saffron/Orange
-    secondary: '#004AAD', // Deep Blue
-    accent: '#FFD700', // Gold
-    background: '#1A1A2E', // Dark Blue/Purple
-    card: '#2D1B4E', // Slightly lighter dark purple
+    // Primary Brand Colors (inspired by meditation apps)
+    primary: '#5B4FC9', // Soft Royal Purple
+    secondary: '#3D2C8D', // Deep Indigo
+    accent: '#FFB800', // Warm Gold
+    background: '#2D1B4E', // Rich Dark Purple
+    card: '#3D2D6B', // Card Purple
     text: '#FFFFFF', // White
-    textSecondary: '#E0E0E0', // Light Gray
-    border: '#4A148C', // Dark Purple border
-    notification: '#FF4500', // Orange Red
-    success: '#4CAF50', // Green
-    error: '#F44336', // Red
-    warning: '#FFC107', // Amber
-
-    // Saffron Palette (Hindu sentiment)
+    textSecondary: '#C7B8EA', // Soft Purple Gray
+    border: '#4A3A8C', // Subtle Purple border
+    notification: '#FF6B6B', // Soft Red
+    success: '#4ECB71', // Fresh Green
+    error: '#FF5757', // Soft Error Red
+    warning: '#FFB800', // Gold Warning
+    
+    // Enhanced Saffron Palette (warmer, more inviting)
     saffron: {
-      50: '#FFF8E1',
-      100: '#FFECB3',
-      200: '#FFE082',
-      300: '#FFD54F',
-      400: '#FFCA28',
-      500: '#FFC107', // Primary Saffron
-      600: '#FFB300',
-      700: '#FFA000',
-      800: '#FF8F00',
-      900: '#FF6F00',
+      50: '#FFF9E6',
+      100: '#FFF3CC',
+      200: '#FFE699',
+      300: '#FFD966',
+      400: '#FFCC33',
+      500: '#FFB800', // Primary Warm Gold
+      600: '#E6A600',
+      700: '#CC9400',
+      800: '#B38200',
+      900: '#997000',
     },
-    // Gold Palette
+    // Refined Gold Palette (more luxurious)
     gold: {
-      50: '#FFFDE7',
-      100: '#FFF9C4',
-      200: '#FFF59D',
-      300: '#FFF176',
-      400: '#FFEE58',
-      500: '#FFEB3B',
-      600: '#FDD835',
-      700: '#FBC02D',
-      800: '#F9A825',
-      900: '#F57F17',
+      50: '#FFFCF0',
+      100: '#FFF8DC',
+      200: '#FFEDB3',
+      300: '#FFE28A',
+      400: '#FFD861',
+      500: '#FFCE3C', // Luminous Gold
+      600: '#F5C518', // Bright Gold
+      700: '#D4A817',
+      800: '#B38F14',
+      900: '#927611',
     },
-    // Deep Purple Palette (for background/contrast)
+    // Deep Purple Palette (meditation-inspired)
     purple: {
-      50: '#F3E5F5',
-      100: '#E1BEE7',
-      200: '#CE93D8',
-      300: '#BA68C8',
-      400: '#AB47BC',
-      500: '#9C27B0',
-      600: '#8E24AA',
-      700: '#7B1FA2',
-      800: '#6A1B9A', // Darker purple for headers/cards
-      900: '#4A148C', // Deepest purple for backgrounds
+      50: '#F3EFFC',
+      100: '#E3D9F8',
+      200: '#C8B6EF',
+      300: '#A990E4',
+      400: '#8B6DD9',
+      500: '#6C4FCC', // Vibrant Purple
+      600: '#5B4FC9', // Primary Brand Purple
+      700: '#4A3FB8',
+      800: '#3D2C8D', // Rich Deep Purple
+      900: '#2D1B6E', // Darkest Purple
     },
-    // Grayscale for text and subtle elements
+    // Soft Indigo (for depth and contrast)
+    indigo: {
+      50: '#EAECF9',
+      100: '#D4D9F3',
+      200: '#A9B3E7',
+      300: '#7F8DDB',
+      400: '#5467CF',
+      500: '#3D51C3',
+      600: '#32419B',
+      700: '#283174',
+      800: '#1D204C',
+      900: '#121025',
+    },
+    // Grayscale (softer, more elegant)
     gray: {
-      50: '#FAFAFA',
-      100: '#F5F5F5',
-      200: '#EEEEEE',
-      300: '#E0E0E0',
-      400: '#BDBDBD',
-      500: '#9E9E9E',
-      600: '#757575',
-      700: '#616161',
-      800: '#424242',
-      900: '#212121',
+      50: '#FAFBFC',
+      100: '#F4F5F7',
+      200: '#EBECF0',
+      300: '#DFE1E6',
+      400: '#C1C7D0',
+      500: '#A5ADBA',
+      600: '#7A869A',
+      700: '#6B778C',
+      800: '#505F79',
+      900: '#344563',
     },
     white: '#FFFFFF',
     black: '#000000',
+    
+    // Additional UI Colors
+    overlay: 'rgba(45, 27, 78, 0.95)',
+    glassOverlay: 'rgba(255, 255, 255, 0.1)',
+    darkGlassOverlay: 'rgba(0, 0, 0, 0.3)',
   },
   gradients: {
-    primary: ['#1A1A2E', '#2D1B4E', '#4A148C'], // Deep blue to dark purple
-    saffronGold: ['#FFC107', '#FFD700'],
-    purpleBlue: ['#4A148C', '#004AAD'],
+    // Primary App Gradient
+    primary: ['#2D1B6E', '#3D2C8D', '#5B4FC9'], // Deep to vibrant purple
+    // Warm Spiritual Gradient
+    spiritual: ['#5B4FC9', '#8B6DD9', '#A990E4'], // Purple fade
+    // Sunrise Gradient
+    sunrise: ['#FF6B6B', '#FFB800', '#FFCE3C'], // Warm glow
+    // Peaceful Night
+    night: ['#1D204C', '#2D1B6E', '#3D2C8D'], // Deep peaceful
+    // Sacred Gold
+    sacredGold: ['#FFB800', '#FFCE3C', '#FFE28A'], // Gold shimmer
+    // Card Gradient
+    card: ['rgba(61, 45, 107, 0.6)', 'rgba(91, 79, 201, 0.3)'], // Glass effect
+    // Overlay Gradient
+    overlay: ['rgba(45, 27, 78, 0)', 'rgba(45, 27, 78, 0.9)'], // Fade to dark
   },
   typography: {
     sizes: {
@@ -120,26 +150,39 @@ export const Theme = {
   },
   shadows: {
     sm: {
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 1 },
-      shadowOpacity: 0.18,
-      shadowRadius: 1.0,
-      elevation: 1,
+      shadowColor: '#2D1B6E',
+      shadowOffset: { width: 0, height: 2 },
+      shadowOpacity: 0.15,
+      shadowRadius: 3,
+      elevation: 2,
     },
     md: {
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 2 },
-      shadowOpacity: 0.23,
-      shadowRadius: 2.62,
-      elevation: 4,
+      shadowColor: '#2D1B6E',
+      shadowOffset: { width: 0, height: 4 },
+      shadowOpacity: 0.25,
+      shadowRadius: 8,
+      elevation: 5,
     },
     lg: {
-      shadowColor: '#000',
-      shadowOffset: { width: 0, height: 4 },
-      shadowOpacity: 0.3,
-      shadowRadius: 4.65,
+      shadowColor: '#2D1B6E',
+      shadowOffset: { width: 0, height: 8 },
+      shadowOpacity: 0.35,
+      shadowRadius: 16,
+      elevation: 10,
+    },
+    glow: {
+      shadowColor: '#FFB800',
+      shadowOffset: { width: 0, height: 0 },
+      shadowOpacity: 0.5,
+      shadowRadius: 12,
       elevation: 8,
     },
+  },
+  // Animations
+  animations: {
+    fast: 200,
+    normal: 300,
+    slow: 500,
   },
   layout: {
     maxWidth: 1200,
